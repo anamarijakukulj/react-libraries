@@ -1,5 +1,6 @@
 export default function Root() {
   return (
+    <>
     <header>
       <div className="logo">
       </div>
@@ -41,5 +42,6 @@ export default function Root() {
         <button type="button">Contact</button>
       </div>
     </footer>
+    </>
   )
 }
