@@ -12,6 +12,8 @@ export default function Root() {
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
+    
+      <button type="button">Contact</button>
     </header>
     
     <main>
