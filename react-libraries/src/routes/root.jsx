@@ -6,7 +6,7 @@ export default function Root() {
       </div>
     
       <nav className="navigation">
-        <ul>
+        <ul className="flex__row">
           <li><a href="#">Home</a></li>
           <li><a href="#">Cards</a></li>
           <li><a href="#">Contact</a></li>
