@@ -52,14 +52,15 @@ button {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
   color: #B7E4F9FF;
   font-weight: bold;
-  font-size: 1rem;
-  line-height: 2rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .flex__column {
@@ -76,4 +77,24 @@ a {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+}
+
+.logo {
+  background-image: url(./assets/Rick-And-Morty-Logo.png);
+  width: 15%;
+  height: 100%;
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+}
+
+.navigation {
+  width: 30%;
+}
+
+.logo__footer {
+  background-image: url(./assets/Rick-And-Morty-Logo.png);
+  width: 100px;
+  height: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
