@@ -9,9 +9,10 @@ export default function Root() {
     
       <nav className="navigation">
         <ul className="flex__row">
-          <li><Link to={}>Home</a></li>
-          <li><Link to={}>Cards</a></li>
-          <li><Link to={`contact/`}>Contact</a></li>
+          <li><Link to={``}>Home</Link></li>
+          <li><Link to={`about/`}>About</Link></li>
+          <li><Link to={`tours/`}>Tours</Link></li>
+          <li><Link to={`contact/`}>Contact</Link></li>
         </ul>
       </nav>
     
@@ -23,30 +24,6 @@ export default function Root() {
         <Outlet />
       </div>
     </main>
-    
-    <footer>
-      <nav className="navigation__footer">
-        <ul>
-          <li><Link to={}>Home</a></li>
-          <li><Link to={}>Cards</a></li>
-          <li><Link to={`contact/`}>Contact</a></li>
-        </ul>
-      </nav>
-    
-      <nav className="navigation__footer">
-        <ul>
-          <li><Link to={}>Characters</a></li>
-          <li><Link to={}>Locations</a></li>
-          <li><Link to={}>Episodes</a></li>
-        </ul>
-      </nav>
-    
-      <div>
-        <div className="logo__footer">
-        </div>
-        <button type="button">Contact</button>
-      </div>
-    </footer>
     </>
   )
 }
