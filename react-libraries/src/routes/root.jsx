@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 export default function Root() {
   return (
@@ -9,9 +9,9 @@ export default function Root() {
     
       <nav className="navigation">
         <ul className="flex__row">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Cards</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><Link to={}>Home</a></li>
+          <li><Link to={}>Cards</a></li>
+          <li><Link to={`contact/`}>Contact</a></li>
         </ul>
       </nav>
     
@@ -27,17 +27,17 @@ export default function Root() {
     <footer>
       <nav className="navigation__footer">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Cards</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><Link to={}>Home</a></li>
+          <li><Link to={}>Cards</a></li>
+          <li><Link to={`contact/`}>Contact</a></li>
         </ul>
       </nav>
     
       <nav className="navigation__footer">
         <ul>
-          <li><a href="#">Characters</a></li>
-          <li><a href="#">Locations</a></li>
-          <li><a href="#">Episodes</a></li>
+          <li><Link to={}>Characters</a></li>
+          <li><Link to={}>Locations</a></li>
+          <li><Link to={}>Episodes</a></li>
         </ul>
       </nav>
     
