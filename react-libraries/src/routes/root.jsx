@@ -16,7 +16,13 @@ export default function Root() {
         </ul>
       </nav>
     
-      <button type="button">Contact</button>
+      <nav className="navigation__social">
+        <ul className="flex__row">
+          <li><Link to={``}><i className="">F</i></Link></li>
+          <li><Link to={``}><i className="">Tw</i></Link></li>
+          <li><Link to={``}><i className="">Ig</i></Link></li>
+        </ul>
+      </nav>
     </header>
     
     <main>
