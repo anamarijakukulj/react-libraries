@@ -10,7 +10,7 @@ export default function Root() {
     
         <nav>
           <ul className="nav__links">
-            <li><Link to={``} className="nav__link">Home</Link></li>
+            <li><Link to={`/`} className="nav__link">Home</Link></li>
             <li><Link to={`about/`} className="nav__link">About</Link></li>
             <li><Link to={`tours/`} className="nav__link">Tours</Link></li>
             <li><Link to={`contact/`} className="nav__link">Contact</Link></li>
