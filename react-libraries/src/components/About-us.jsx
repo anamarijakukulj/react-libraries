@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import imageAbout from "../assets/about.jpeg";
 import Title from "./Title";
 
@@ -22,9 +23,9 @@ const AboutUs = () => {
             quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
             unde dolor?
           </p>
-          <a href="#" className="btn">
+          <Link to={"about/"} className="btn">
             read more
-          </a>
+          </Link>
         </article>
       </div>
     </section>
