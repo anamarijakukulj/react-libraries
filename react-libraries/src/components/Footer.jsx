@@ -1,6 +1,6 @@
-import { Link } from "react-route-dom";
+import { Link } from "react-router-dom";
 import { pageLinks } from "../data";
-import { socialLinks } from "../data";
+// import { socialLinks } from "../data";
 
 const Footer = () => {
   return (
@@ -17,8 +17,8 @@ const Footer = () => {
         })}
       </ul>
 
-//       <ul className="footer-icons">
-//         {socialLinks.map((link) => {
+{/* //       <ul className="footer-icons">
+//         {socialLinks.map((link) => { 
 //           return (
 //             <li id={link.id}>
 //               <a
@@ -32,7 +32,7 @@ const Footer = () => {
 //             </li>
 //           );
 //         })}
-//       </ul>
+//       </ul>*/}
 
       <ul className="nav-icons">
             <li><Link to={``} className="nav-icon"><i className="">F</i></Link></li>
@@ -42,7 +42,7 @@ const Footer = () => {
 
       <p className="copyright">
         copyright &copy; Backroads travel tours company
-        <span id="date">{new Date().getFullYear()}</span> all rights reserved
+        {/* <span id="date">{new Date().getFullYear()}</span> all rights reserved */}
       </p>
     </footer>
   );
