@@ -1,7 +1,7 @@
 import imageAbout from "../assets/about.jpeg";
 import Title from "./Title";
 
-const About = () => {
+const AboutUs = () => {
   return (
     <section className="section" id="about">
       <Title title="about" subTitle="us" />
@@ -31,4 +31,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutUs;
