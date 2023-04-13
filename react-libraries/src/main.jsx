@@ -4,7 +4,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
+import Home from "./routes/home";
+import About from "./routes/about";
+import Tours from "./routes/tours";
 import Contact from "./routes/contact";
+
 
 const router = createBrowserRouter([
   {
@@ -12,10 +16,23 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
-    {
-    path: "contact/",
-    element: <Contact />,
-  }]
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "about/",
+        element: <About />,
+      },
+      {
+        path: "tours/",
+        element: <Tours />,
+      },
+      {
+        path: "contact/",
+        element: <Contact />,
+      }
+    ]
   },
 ]);
 
