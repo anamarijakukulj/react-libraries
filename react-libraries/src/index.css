@@ -437,12 +437,11 @@ p {
   cursor: pointer;
   font-size: 1rem;
   letter-spacing: var(--spacing);
-  margin-right: 0.7rem;
+  margin-right: 1rem;
 }
 
 .nav__link:hover {
   color: var(--clr-primary-5);
-  padding-left: 2.25rem;
 }
 
 .nav__icons {
