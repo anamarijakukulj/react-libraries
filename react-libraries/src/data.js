@@ -1,7 +1,6 @@
 import tour1 from "./assets/tour-1.jpeg";
 import tour2 from "./assets/tour-2.jpeg";
 import tour3 from "./assets/tour-3.jpeg";
-import tour4 from "./assets/tour-4.jpeg";
 
 export const pageLinks = [
   { id: 1, href: "/", text: "home" },
@@ -11,9 +10,9 @@ export const pageLinks = [
 ];
 
 export const socialLinks = [
-  { id: 1, href: "https://www.twitter.com", icon: "fab fa-facebook" },
-  { id: 2, href: "https://www.twitter.com", icon: "fab fa-twitter" },
-  { id: 3, href: "https://www.twitter.com", icon: "fab fa-squarespace" },
+  { id: 1, href: "https://www.facebook.com", icon: "icon"},
+  { id: 2, href: "https://www.twitter.com", icon: "icon"},
+  { id: 3, href: "https://www.instagram.com", icon: "icon"},
 ];
 
 export const services = [

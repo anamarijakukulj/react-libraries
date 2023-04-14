@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import { pageLinks } from "../data";
+import Facebook from "@mui/icons-material/FacebookOutlined";
+import Twitter from "@mui/icons-material/Twitter";
+import Instagram from "@mui/icons-material/Instagram";
 // import { socialLinks } from "../data";
 
 const Footer = () => {
@@ -17,32 +20,14 @@ const Footer = () => {
         })}
       </ul>
 
-{/* //       <ul className="footer-icons">
-//         {socialLinks.map((link) => { 
-//           return (
-//             <li id={link.id}>
-//               <a
-//                 href={link.href}
-//                 target="_blank"
-//                 className="footer-icon"
-//                 rel="noreferrer"
-//               >
-//                 <i className={link.icon}></i>
-//               </a>
-//             </li>
-//           );
-//         })}
-//       </ul>*/}
-
-      <ul className="nav-icons">
-            <li><Link to={``} className="nav-icon"><i className="">F</i></Link></li>
-            <li><Link to={``} className="nav-icon"><i className="">Tw</i></Link></li>
-            <li><Link to={``} className="nav-icon"><i className="">Ig</i></Link></li>
+      <ul className="footer-icons">
+            <li><Link to={`www.facebook.com`} className="footer-icon"><Facebook /></Link></li>
+            <li><Link to={`www.twitter.com`} className="footer-icon"><Twitter /></Link></li>
+            <li><Link to={`www.instagram.com`} className="footer-icon"><Instagram /></Link></li>
        </ul>
 
       <p className="copyright">
         copyright &copy; Backroads travel tours company
-        {/* <span id="date">{new Date().getFullYear()}</span> all rights reserved */}
       </p>
     </footer>
   );
