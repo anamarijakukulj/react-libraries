@@ -23,26 +23,21 @@ const AboutPage = () => {
                         unde dolor?
                     </p>
 
-                    <div className="about-more">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-                            quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
-                            unde dolor?
-                        </p>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-                            quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
-                            unde dolor?
-                        </p>
-
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-                            quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
-                            unde dolor?
-                        </p>
-                    </div>
-          
-                    <button type="button" className="btn" id="btn-more">read more</button>
+                    <p>
+                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+                         quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
+                         unde dolor?
+                     </p>
+                        
+                     <p>
+                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+                         quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
+                         unde dolor?
+                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+                         quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
+                         unde dolor?
+                     </p>
+                        
                 </article>
             </div>
         </section>
