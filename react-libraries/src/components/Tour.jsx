@@ -1,4 +1,5 @@
 import Title from "./Title";
+import { Link } from "react-router-dom";
 import { tours } from "../data";
 
 const Tours = () => {
@@ -6,7 +7,7 @@ const Tours = () => {
     <section className="section" id="tours">
       <Title title="featured" subTitle="tours" />
 
-      <div className="section-center featured-center">
+      <div className="tour-center featured-center">
         {tours.map((tour) => {
           return (
             <article className="tour-card">
@@ -33,6 +34,12 @@ const Tours = () => {
             </article>
           );
         })}
+      </div>
+
+      <div className="tour-center">
+        <Link to={"tours/"} className="btn tour-btn">
+          explore
+        </Link>
       </div>
     </section>
   );
