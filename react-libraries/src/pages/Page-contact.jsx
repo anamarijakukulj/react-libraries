@@ -40,11 +40,10 @@ const ContactForm = () => {
              return errors;
            }}
 
-           onSubmit={(values, { setSubmitting }) => {
+           onSubmit={(values, { resetForm }) => {
              setTimeout(() => {
                alert(JSON.stringify(values, null, 2));
-               setSubmitting(false);
-              //  resetForm();
+               resetForm();
              }, 400);
            }}
          >
