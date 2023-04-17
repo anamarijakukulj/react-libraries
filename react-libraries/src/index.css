@@ -530,6 +530,10 @@ textarea {
   margin-bottom: 2rem;
 }
 
+.page .about-center {
+  margin: 5rem auto;
+}
+
 .form-center {
   display: flex;
   flex-direction: column;
