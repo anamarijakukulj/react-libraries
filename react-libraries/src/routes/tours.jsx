@@ -1,6 +1,6 @@
 import ToursPage from "../pages/Page-tours";
 
-export default Tours() {
+export default function Tours() {
 
   return (
   <ToursPage />
