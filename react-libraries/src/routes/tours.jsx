@@ -1,8 +1,9 @@
-export default function Tours() {
+import ToursPage from "../pages/Page-tours";
+
+export default Tours() {
+
   return (
-    <>
-      <h1>Hello world</h1>
-      <p>Here should go the tours</p>
-    </>
+  <ToursPage />
+    
 )}
 
