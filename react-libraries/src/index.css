@@ -103,6 +103,37 @@ p {
   color: var(--clr-grey-5);
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 30%;
+  margin-bottom: 4rem;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.5rem 0 0.75rem;
+}
+
+input, textarea {
+  border: solid 2px var(--clr-primary-5);
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+input {
+  height: 2.5rem;
+}
+
+textarea {
+  height: 8rem;
+}
+
 .btn {
   text-transform: uppercase;
   background: var(--clr-primary-5);
@@ -260,6 +291,17 @@ p {
   margin-bottom: 0.5rem;
 }
 
+#tours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tour-center {
+  margin: 0 auto;
+  max-width: 1350px;
+}
+
 .tour-card {
   transition: var(--transition);
   background: var(--clr-grey-10);
@@ -335,6 +377,8 @@ p {
 
 .tour-btn {
   text-align: center;
+  padding: 0.9rem 1.6rem;
+  font-size: 1rem;
 }
 
 .featured-center {
@@ -346,8 +390,7 @@ p {
 .footer {
   background: var(--clr-grey-1);
   text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 2rem 2rem 1rem;
 }
 
 .footer-links,
@@ -477,4 +520,23 @@ p {
   justify-content: center;
   width: 100%;
   margin-top: 20rem;
+}
+
+.page {
+  margin-top: 4rem;
+}
+
+.page .section-title {
+  margin-bottom: 2rem;
+}
+
+.form-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-center p {
+  font-size: 1.25rem;
+  margin-bottom: 4rem;
 }
