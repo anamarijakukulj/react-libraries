@@ -1,8 +1,9 @@
+import AboutPage from "../pages/Page-about";
+
 export default function About() {
   return (
     <>
-      <h1>Hello world</h1>
-      <p>Here should go about</p>
+      <AboutPage />
     </>
 )}
 
