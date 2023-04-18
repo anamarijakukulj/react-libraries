@@ -1,5 +1,6 @@
 import Title from "./Title";
 import { Link } from "react-router-dom";
+import MapIcon from "@mui/icons-material/Map";
 import { tours } from "../data";
 
 const Tours = () => {
@@ -9,30 +10,32 @@ const Tours = () => {
 
       <div className="tour-center featured-center">
         {tours.map((tour) => {
-          return (
-            <article className="tour-card">
-              <div className="tour-img-container">
-                <img src={tour.image} className="tour-img" alt="" />
-                <p className="tour-date">{tour.date}</p>
-              </div>
-              <div className="tour-info">
-                <div className="tour-title">
-                  <h4>{tour.title}</h4>
+          if(tour.id < 4){
+              return (
+              <article className="tour-card">
+                <div className="tour-img-container">
+                  <img src={tour.image} className="tour-img" alt="" />
+                  <p className="tour-date">{tour.date}</p>
                 </div>
-                <p>{tour.text}</p>
-                <div className="tour-footer">
-                  <p>
-                    <span>
-                      <i className="fas fa-map"></i>
-                    </span>{" "}
-                    {tour.location}
-                  </p>
-                  <p>{tour.duration} days</p>
-                  <p>from ${tour.price}</p>
+                <div className="tour-info">
+                  <div className="tour-title">
+                    <h4>{tour.title}</h4>
+                  </div>
+                  <p>{tour.text}</p>
+                  <div className="tour-footer">
+                    <p className="tour-location">
+                      <span>
+                        <MapIcon />
+                      </span>
+                      {tour.location}
+                    </p>
+                    <p>{tour.duration} days</p>
+                    <p>from ${tour.price}</p>
+                  </div>
                 </div>
-              </div>
-            </article>
-          );
+              </article>
+            );
+          }
         })}
       </div>
 
