@@ -5,7 +5,6 @@ import { tours } from '../data';
 import Title from '../components/Title';
 
 export default function ToursPage() {
-   
 
     return (
         <section className='page'>
