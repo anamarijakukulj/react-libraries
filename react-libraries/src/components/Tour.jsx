@@ -12,7 +12,7 @@ const Tours = () => {
         {tours.map((tour) => {
           if(tour.id < 4){
               return (
-              <article className="tour-card">
+              <article className="tour-card" key={tour.id}>
                 <div className="tour-img-container">
                   <img src={tour.image} className="tour-img" alt="" />
                   <p className="tour-date">{tour.date}</p>
