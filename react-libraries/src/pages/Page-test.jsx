@@ -61,7 +61,7 @@ export default function TestPage() {
                 {tours.map((tour) => {
 
                     return(
-                        <Card className={classes.root}>
+                        <Card className={classes.root} key={tour.id}>
                             <CardMedia component='img' image={tour.image} alt='tour' />
 
                             <CardContent className={classes.info}>
