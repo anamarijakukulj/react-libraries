@@ -20,7 +20,7 @@ export default function ToursPage() {
                     })
 
                     return(
-                        <div className='container' onClick={() => set(state => !state)}>
+                        <div key={tour.id} className='container' onClick={() => set(state => !state)}>
                             <a.div className='c front' 
                             style={{opacity: opacity.to(o => 1 - o), transform}} >
                                 <img src={tour.image} alt='tour image' />
