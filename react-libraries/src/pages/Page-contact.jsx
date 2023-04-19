@@ -11,6 +11,7 @@ const ContactPage = () => {
         <p>Do you have questions? Feel free to write.</p>
 
         <ContactForm />
+    
       </div>
     </section>
   );
