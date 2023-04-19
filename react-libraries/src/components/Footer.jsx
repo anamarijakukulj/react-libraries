@@ -11,7 +11,7 @@ const Footer = () => {
       <ul className="footer-links">
         {pageLinks.map((link) => {
           return (
-            <li id={link.id}>
+            <li key={link.id}>
               <Link to={link.href} className="footer-link">
                 {link.text}
               </Link>
