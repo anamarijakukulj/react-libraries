@@ -1,6 +1,6 @@
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 
-export default function Form() {
+export default function ContactForm() {
   return (
     <Formik
       initialValues={{ name: '', email: '', message: ''}}
