@@ -8,6 +8,7 @@ import Home from "./routes/home";
 import About from "./routes/about";
 import Tours from "./routes/tours";
 import Contact from "./routes/contact";
+import Test from "./routes/test";
 
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "contact/",
         element: <Contact />,
+      },
+      {
+        path: "test/",
+        element: <Test />
       }
     ]
   },
