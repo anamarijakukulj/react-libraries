@@ -1,6 +1,6 @@
 import MapIcon from "@mui/icons-material/Map";
 import { tours } from '../data';
-import { Card, CardContent, CardMedia, Typography } from '@mui/material/';
+import { Card, CardContent, CardMedia, Typography, Button } from '@mui/material/';
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
@@ -46,6 +46,21 @@ const useStyles = makeStyles({
     footerLocation: {
         display: 'flex',
         alignItems: 'center',
+    },
+
+    button: {
+        textTransform: 'uppercase',
+        background: 'var(--clr-primary-5)',
+        color: 'var(--clr-white)',
+        padding: '0.375rem 0.75rem',
+        letterSpacing: 'var(--spacing)',
+        display: 'inline-block',
+        fontWeight: '700',
+        transition: 'var(--transition)',
+        fontSize: '0.875rem',
+        border: '2px solid transparent',
+        cursor: 'pointer',
+        boxShadow: '0 1px 3px rgba(0, 0, 0, 0.2)',
     }
 })
 
@@ -57,6 +72,7 @@ export default function TestCard() {
                 {tours.map((tour) => {
 
                     return(
+                        <>
                         <Card className={classes.root} key={tour.id}>
                             <CardMedia component='img' image={tour.image} alt='tour' />
 
@@ -84,6 +100,9 @@ export default function TestCard() {
                                 </Typography>
                             </CardContent>
                         </Card>
+
+                        {/* <Button className={classes.button} variant="contained">Click me</Button> */}
+                        </>
                     )
                 })}
             </div>
