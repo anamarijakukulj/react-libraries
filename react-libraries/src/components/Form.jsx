@@ -11,7 +11,7 @@ export default function ContactForm() {
              } else if (
                !/^[A-Z]{2,15}$/i.test(values.name)
              ) {
-               errors.name = 'Please write yout name';
+               errors.name = 'Must be 15 characters or less without numbers and special characters';
              }
 
              if (!values.email) {
@@ -19,7 +19,7 @@ export default function ContactForm() {
              } else if (
                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
              ) {
-               errors.email = 'Invalid email address';
+               errors.email = 'invalid email address';
              }
 
              if (!values.message) {
@@ -27,7 +27,7 @@ export default function ContactForm() {
              } else if (
                !/^[A-Z0-9.-_]{2,50}$/i.test(values.message)
              ) {
-               errors.message = 'Please write yout message';
+               errors.message = 'Must be 50 characters or less';
              }
 
              return errors;
@@ -51,7 +51,7 @@ export default function ContactForm() {
                 <Field type="email" id="email" name="email" />
                 <ErrorMessage name="email" component="div" />
 
-                <label htmlFor="message">Email</label>
+                <label htmlFor="message">Message</label>
                 <Field type="text" as="textarea" id="message" name="message" />
                 <ErrorMessage name="message" component="div" />
                 
